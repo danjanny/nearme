@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.AddTransaksiFragment">
+
+    <!-- DIALOG TITLE -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/transaksi_dialog_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/transaksi_dialog_close"
+            android:text="@string/transaksi_add_title"
+            android:textSize="@dimen/dialog_title" />
+
+    </RelativeLayout>
+
+    <!-- divider line -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.00001dp"
+        android:layout_gravity="center"
+        android:background="@color/grey_300" />
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/transaksi_submit_bottom"
+        android:orientation="vertical">
+
+        <!-- Nama -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/textinputlayout_top_margin"
+            android:layout_marginRight="20dp"
+            android:hint="@string/transaksi_add_nama"
+            android:paddingStart="-13dp"
+            android:paddingLeft="-13dp"
+            app:boxBackgroundColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/transaksi_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Nominal -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/textinputlayout_left_margin"
+            android:layout_marginLeft="@dimen/textinputlayout_left_margin"
+            android:layout_marginTop="@dimen/textinputlayout_top_margin"
+            android:layout_marginEnd="@dimen/textinputlayout_right_margin"
+            android:layout_marginRight="@dimen/textinputlayout_right_margin"
+            android:hint="@string/transaksi_add_nominal"
+            android:paddingStart="-13dp"
+            android:paddingLeft="-13dp"
+            app:boxBackgroundColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/transaksi_nominal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Submit button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/transaksi_add_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/textinputlayout_left_margin"
+            android:layout_marginLeft="@dimen/textinputlayout_left_margin"
+            android:layout_marginTop="@dimen/submit_button_top_margin"
+            android:layout_marginEnd="@dimen/textinputlayout_right_margin"
+            android:layout_marginRight="@dimen/textinputlayout_right_margin"
+            android:text="@string/transaksi_add_submit" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

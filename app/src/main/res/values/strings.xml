@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Todo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="transaksi_item">MAKAN SIANG</string>
+    <string name="transaksi_tgl">12 - Feb - 2020</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="info">Info</string>
+    <string name="fetch_data_error">Gagal memuat data!</string>
+    <string name="fetch_data_ok">Berhasil memuat data</string>
+    <string name="hello_add_transaksi">Add Transaksi Form</string>
+    <string name="transaksi_add_title">Tambah Transaksi</string>
+    <string name="transaksi_add_nama">Nama Transaksi</string>
+    <string name="transaksi_add_nominal">Nominal</string>
+    <string name="transaksi_add_submit">SUBMIT</string>
+    <string name="transaksi_nominal">50.000</string>
+    <string name="transaksi_toolbar_title">Transaksi</string>
+    <string name="transaksi_toolbar_subtitle">Transaksi Subtitle</string>
+    <string name="menu_check_all">Check All Item</string>
+    <string name="menu_delete">Delete All Checked Item</string>
+</resources>

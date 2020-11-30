@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/transaksi_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_200"
+        tools:ignore="PrivateResource">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/transaksi_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="16dp"
+            tools:ignore="UnusedAttribute">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/transaksi_toolbar_title"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transaksi_toolbar_title" />
+
+                <TextView
+                    android:id="@+id/transaksi_toolbar_subtitle"
+                    style="@style/TextAppearance.MaterialComponents.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/transaksi_toolbar_title"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/transaksi_toolbar_subtitle"
+                    android:textSize="@dimen/toolbar_subtitle" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <!--        <FrameLayout android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+        <!--            <View android:layout_width="match_parent"-->
+        <!--                android:layout_height="1dp"-->
+        <!--                android:background="@drawable/toolbar_dropshadow"/>-->
+
+        <!--        </FrameLayout>-->
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">20sp</dimen>
+    <dimen name="dialog_title">18sp</dimen>
+    <dimen name="textinputlayout_left_margin">20sp</dimen>
+    <dimen name="textinputlayout_right_margin">20sp</dimen>
+    <dimen name="submit_button_top_margin">20sp</dimen>
+    <dimen name="textinputlayout_bottom_margin">20sp</dimen>
+    <dimen name="transaksi_submit_bottom">20sp</dimen>
+    <dimen name="textinputlayout_top_margin">10sp</dimen>
+    <dimen name="toolbar_subtitle">12sp</dimen>
+</resources>
